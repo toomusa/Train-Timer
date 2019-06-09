@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather&display=swap">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-database.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+  <title>Document</title>
+</head>
+<body>
+  
+  <div class="container">
+    <div class="row">
+      <div class="row">
+        <div class="col-sm-0 col-xs-1 col-md-0" id="spacer">
+          <!-- left-side spacer -->
+        </div>
+        <div class="col-sm-8 col-xs-10 col-md-8" id="main">
+          <!-- main content area -->
+          <div id="heading">
+            <img src="./assets/images/train-header.jpg" id="image2">
+          </div>
+          <div id="table-container">
+            <table id="new-row">
+              <tr>
+                <th>Train Name</th>
+                <th>Destination</th>
+                <th>Frequency (min)</th>
+                <th>Next Arrival</th>
+                <th>Minutes Away</th>
+              </tr>
+            </table>
+          </div>
+          <div id="form-container">
+            <form>
+              <img src="./assets/images/train.png" id="image">
+              <div id="form-area">
+                <h5>Enter Next Train</h5>
+                <label>Train Name</label>
+                <input class="input-field" id="train-name-input" type="text"></input><br>
+                <label>Destination</label>
+                <input class="input-field" id="destination-input" type="text"></input><br>
+                <label>First Train Time (military time)</label>
+                <input class="input-field" id="train-time-input" type="number"></input><br>
+                <label>Frequency</label>
+                <input class="input-field" id="frequency-input" type="text"></input><br>
+                <button id="submit" type="submit">Submit</button><br>
+              </div>
+            </form>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-xs-12 col-md-12" id="footing">
+              <!-- footer row -->
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-1 col-md-4" id="spacer">
+          <!-- right-side spacer -->
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script rel="javascript" src="./assets/javascript/code.js"></script>
+</body>
+</html>
